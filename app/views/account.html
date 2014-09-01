@@ -1,0 +1,15 @@
+<div ng-if="user">
+	<button id='logout-btn' type="submit" class="btn btn-danger" ng-click="logout()">Logout</button>
+	<p>{{message}}</p>
+	<form id="user-info" ng-submit="updateInfo()">
+		<label for="username">Username</label>
+		<input type="text" class="form-control" id="username" ng-model="user.username">
+		<label for="email">Email</label>
+		<input type="text" class="form-control" id="email" ng-model="user.email">
+		<label for="first-name">First Name</label>
+		<input type="text" class="form-control" id="first-name" ng-model="user.first_name">
+		<label for="last-name">Last Name</label>
+		<input type="text" class="form-control" id="last-name" ng-model="user.last_name">
+		<button type="submit" class="btn btn-warning" ng-click="updateInfo()">Update User Info</button>
+	</form>
+</div>

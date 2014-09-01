@@ -1,0 +1,1 @@
+var app=angular.module("fuzzyRobotApp",["ngRoute"]);app.config(function(t,o){t.when("/",{templateUrl:"views/login.html",controller:"LoginCtrl"}).when("/account",{templateUrl:"views/account.html",controller:"AccountCtrl"}).otherwise({redirectTo:"/"}),o.interceptors.push("Auth")}),app.run(function(t,o){t.localStorage.token&&o.path("/account")});

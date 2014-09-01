@@ -1,0 +1,1 @@
+app.factory("Auth",["$window","$q","$location",function(e,o,n){return{request:function(o){return console.log("request"),console.log(o),o.headers=o.headers||{},e.localStorage.token&&(o.headers.Authorization="JWT "+e.localStorage.token),o},response:function(e){return e||o.when(e)},responseError:function(e){return 401===e.status&&n.path("/"),e||o.when(e)}}}]);

@@ -1,0 +1,14 @@
+<div class="jumbotron">
+  <h1>Welcome!</h1>
+  <p class="lead">
+    Go ahead and login below.
+  </p>
+</div>
+<p>{{message}}</p>
+<div class="row marketing">
+  <form ng-submit="auth()">
+    <input type="text" class="form-control" placeholder="Username" ng-model="user.username">
+    <input type="password" class="form-control" placeholder="Password" ng-model="user.password">
+    <button type="submit" class="btn btn-success" ng-click='auth()'>Log In</button>
+  </form>
+</div>

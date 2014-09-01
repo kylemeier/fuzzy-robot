@@ -1,0 +1,1 @@
+app.controller("LoginCtrl",["$scope","$http","$window","$location","Auth",function(n,o,l,t,e){n.user={username:null,password:null},n.message="",n.auth=function(n){e.login(n).then(function(){console.log("hey")})}}]);
