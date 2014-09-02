@@ -3,9 +3,6 @@ app.factory('Auth', ['$window', '$q', '$location',
 	function($window, $q, $location){
   		return {
 		    request: function (config) {
-		    	console.log('request');
-		    	console.log(config);
-
 		      config.headers = config.headers || {};
 
 		      //If a token exists, attach it to the header of all HTTP requests for authentication
